@@ -30,8 +30,8 @@ public:
 	bool insertBackups(BlockIndexRBTree** root, int x, string name, uint64_t blockid, pair<string, string> backupsDatanodeid);
 	bool insert(BlockIndexRBTree** root, int x, string Name, LocatedBlocks* blockMessage);
 	bool remove(BlockIndexRBTree** root, int x, string Name);/////////////////////////////////////////////////////////////////////////////
-	bool checkCPHead();//是否已有冲突节点
-	bool createCPHead(string Name, LocatedBlocks* blockMessage);//创建第一个冲突节点（链表头）
+	bool checkCPHead();//鏄惁宸叉湁鍐茬獊鑺傜偣
+	bool createCPHead(string Name, LocatedBlocks* blockMessage);//鍒涘缓绗竴涓啿绐佽妭鐐癸紙閾捐〃澶达級
 	const LocatedBlock* inquire(BlockIndexRBTree** root, int x, string name, uint64_t blockID);
 	LocatedBlocks* inquireALL(BlockIndexRBTree** root, int x, string name);
 	LSMessage GetLeftSon();
